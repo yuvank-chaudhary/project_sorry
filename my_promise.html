@@ -1,11 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>promise</title>
+    <style>
+    h1 {
+        text-align: center;
+        font-size: 2rem; /* Use relative units */
+        margin: 20px 0;
+    }
+
+    #promise {
+        min-height: 85vh; /* Use min-height instead of fixed height */
+        background-color: #FCB7C7;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start; /* Changed from align-content to align-items */
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .promise_1 {
+        background-color: #D552A3;
+        min-height: 300px; /* Use min-height for flexibility */
+        width: 100%; /* Default to full width on small screens */
+        max-width: 250px; /* Limit max width */
+        font-size: 1rem; /* Use relative units */
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 8px; /* Add some styling for better appearance */
+        color: white; /* Ensure text is visible */
+    }
+
+    /* Small screens (phones) */
+    @media (max-width: 600px) {
+        .promise_1 {
+            width: 100%;
+            font-size: 1rem;
+        }
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
+
+    /* Medium screens (tablets) */
+    @media (min-width: 601px) and (max-width: 1023px) {
+        .promise_1 {
+            width: calc(50% - 10px); /* Two cards per row */
+            font-size: 1.1rem;
+        }
+        h1 {
+            font-size: 1.8rem;
+        }
+    }
+
+    /* Large screens (desktops) */
+    @media (min-width: 1024px) {
+        .promise_1 {
+            width: calc(25% - 15px); /* Four cards per row */
+            font-size: 1.2rem;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+    }
+</style>
 </head>
+
 <body>
-    
+    <h1>My Promises 🤞</h1>
+    <div id="promise">
+        <div class="promise_1">
+            <p>First, I promise to always respect you — your thoughts, your feelings, and the person you are. No matter
+                what happens, I will never try to change you, because I love you for who you truly are.</p>
+        </div>
+        <div class="promise_1">
+            <p>Second, I promise to stay honest with you. Even when things are difficult or uncomfortable, I will always
+                choose truth over lies, because you deserve nothing less than complete honesty.</p>
+        </div>
+        <div class="promise_1">
+            <p>Third, I promise to support you in everything you do. Your dreams, your goals, your struggles — I will
+                stand beside you through all of it, not just in the good times but also when things get tough</p>
+        </div>
+        <div class="promise_1">
+            <p>Fourth, I promise to make you feel special and valued every day. I may not be perfect, but I will always
+                try my best to make you smile, to care for you, and to remind you how important you are in my life.</p>
+        </div>
+    </div>
 </body>
+
 </html>
